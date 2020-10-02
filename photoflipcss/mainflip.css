@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+/*global styles*/
+
+html{
+    font-size:24px; 
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+}
+
+/*header*/
+
+#webheader{
+    font-family:'Staatliches', cursive;
+    text-align: center;
+    color: hsl(0, 87%, 65%);
+}
+
+/* Image Flipping */
+
+.flip-container{
+    perspective: 1000px;
+    display:flex;
+}
+
+.flipper{
+    margin: 0 auto;
+    transform: preserve-3d;
+    transition: transform 2s;
+    cursor: pointer;
+}
+
+.flipper.flip {
+    transform: rotateY(180deg);
+}
+
+/*photo style*/
+
+.first-photo, .second-photo{
+    display: inline-block;
+    max-width:500px;
+}
